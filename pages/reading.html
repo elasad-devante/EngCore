@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>EngCore - Belajar Bahasa Inggris</title>
+</head>
+<body>
+    <nav id="navbar">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/Logo.png" alt="Logo" />
+                </a>
+            </div>
+            <div class="navigation">
+                <ul>
+                    <li><a href="../index.html">Beranda</a></li>
+                    <li><a href="reading.html">Reading Class</a></li>
+                    <li><a href="listening.html">Listening Class</a></li>
+                    <li><a href="about.html">Tentang Kami</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <svg 
+                clip-rule="evenodd" 
+                fill-rule="evenodd" 
+                stroke-linejoin="round" 
+                width="24"
+                height="24"
+                stroke-miterlimit="2" 
+                viewBox="0 0 24 24" 
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="m15.97 17.031c-1.479 1.238-3.384 1.985-5.461 1.985-4.697 0-8.509-3.812-8.509-8.508s3.812-8.508 8.509-8.508c4.695 0 8.508 3.812 8.508 8.508 0 2.078-.747 3.984-1.985 5.461l4.749 4.75c.146.146.219.338.219.531 0 .587-.537.75-.75.75-.192 0-.384-.073-.531-.22zm-5.461-13.53c-3.868 0-7.007 3.14-7.007 7.007s3.139 7.007 7.007 7.007c3.866 0 7.007-3.14 7.007-7.007s-3.141-7.007-7.007-7.007z" fill-rule="nonzero"/>
+                </svg>
+            </div>
+        </nav>
+    <header>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-left">
+                <h1>Reading Class</h1>
+                <p style="color: #99A98F;">Instructions</p>
+                <p>Look at the poster for a lost dog and do the exercises to practice and improve your reading skills.</p>
+            </div>
+            <div class="hero-right">
+                <img src="../assets/readingpage.png" alt="Reading Class Image" />
+            </div>
+        </section>
+    </header>
+
+    <section id="practice">
+        <div class="material">
+            <h1>Material 1</h1>
+            <p>Do some preparation exercise before you answer. Grab a pen<br>
+            and paper so you can take notes.</p>
+            <img src="../assets/poster.jpg" alt="Lost Dog Poster" />
+        </div>
+        <div class="quiz">
+            <h1>Check Your Understanding</h1>
+            <p>Answer these questions below!</p>
+
+            <div class="quiz-container" id="quizContainer">
+                <!-- Quiz di generate dari function createQuiz() -->
+            </div>
+
+            <div class="controls">
+                <button onclick="checkAnswers()">Check Answer</button>
+                <button onclick="resetQuiz()">Reset Quiz</button>
+            </div>
+            <div class="scoreChecker">
+                <p id="score"></p>
+            </div>
+        </div> 
+        <div class="key">
+            <h1>Check Out The Correct Answers</h1>
+            <div class="answer-key" id="answerKey">
+                <!-- Dari function createAnswerKey di JS -->
+            </div>
+            <button onclick="toggleAnswerKey(this)">Check The Correct Answers Here!</button>
+        </div> 
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../assets/logo3.png" alt="logo" />
+                <p>Platform pembelajaran bahasa Inggris online interaktif untuk segala usia dan level.</p>
+            </div>
+            <ul>
+                <li><strong>Produk</strong></li>
+                <br>
+                <li><a href="../index.html">Beranda</a></li>
+                <li><a href="../index.html#kelas">Kelas</a></li>
+                <li><a href="../index.html#sumberBelajar">Sumber Belajar</a></li>
+            </ul>
+            <ul>
+                <li><strong>Perusahaan</strong></li>
+                <br>
+                <li><a href="pages/about.html">Tentang Kami</a></li>
+                <li><a href="pages/about.html#contact">Kontak</a></li>
+            </ul>
+            <ul>
+                <li><strong>Jam Kerja</strong></li>
+                <br>
+                <li>Sen-Jum : 10:00-16:00</li>
+                <li>Sab-Min : Libur</li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ 2025 by DEMU DEV. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="../js/script.js"></script>
+    <script src="../js/classes.js"></script>
+</body>
+</html>

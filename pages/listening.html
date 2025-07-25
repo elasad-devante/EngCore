@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>EngCore - Belajar Bahasa Inggris</title>
+</head>
+<body>
+    <nav id="navbar">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/Logo.png" alt="Logo" />
+                </a>
+            </div>
+            <div class="navigation">
+                <ul>
+                    <li><a href="../index.html">Beranda</a></li>
+                    <li><a href="reading.html">Reading Class</a></li>
+                    <li><a href="listening.html">Listening Class</a></li>
+                    <li><a href="about.html">Tentang Kami</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <svg 
+                clip-rule="evenodd" 
+                fill-rule="evenodd" 
+                stroke-linejoin="round" 
+                width="24"
+                height="24"
+                stroke-miterlimit="2" 
+                viewBox="0 0 24 24" 
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="m15.97 17.031c-1.479 1.238-3.384 1.985-5.461 1.985-4.697 0-8.509-3.812-8.509-8.508s3.812-8.508 8.509-8.508c4.695 0 8.508 3.812 8.508 8.508 0 2.078-.747 3.984-1.985 5.461l4.749 4.75c.146.146.219.338.219.531 0 .587-.537.75-.75.75-.192 0-.384-.073-.531-.22zm-5.461-13.53c-3.868 0-7.007 3.14-7.007 7.007s3.139 7.007 7.007 7.007c3.866 0 7.007-3.14 7.007-7.007s-3.141-7.007-7.007-7.007z" fill-rule="nonzero"/>
+                </svg>
+            </div>
+        </nav>
+    <header>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-left">
+                <h1>Listening Class</h1>
+                <p style="color: #99A98F;">Instructions</p>
+                <p>Listen to the radio interview and do the exercises to practice and improve your listening skills.</p>
+            </div>
+            <div class="hero-right">
+                <img src="../assets/listeningpage.png" alt="Reading Class Image" />
+            </div>
+        </section>
+    </header>
+
+    <section id="practice">
+        <div class="material">
+            <h1>Material 1</h1>
+            <p>Do some preparation exercise before you answer. Take a pen<br>
+            and paper so you can take note. Listen and answer the<br>
+            questions of the video below.</p>
+            <iframe src="https://www.youtube.com/embed/H8mRwu1gdbE"></iframe>
+        </div>
+
+        <div class="material">
+            <h1 style="padding-top:90px ;">Material 2</h1>
+            <p>Do some preparation exercise before you answer. Take a pen<br>
+            and paper so you can take note. Listen to the audio and answer<br>
+            the questions based on the audio.</p>
+            <audio controls>
+                <source src="../assets/A1_A_good_nights_sleep.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <div class="material-transcript">
+            <h1>Transcript Material 2</h1>
+            <div class="text-box">
+                <p>
+                    <strong>Host:</strong> At exam time it is important to sleep well. Today we have Doctor Baker with us in the studio and he is going to give us five top tips for getting a good night's sleep. Welcome to the show, Doctor Baker.<br>
+                    <strong>Dr Baker:</strong> Thank you. It's great to be here. Let's start with tip one. Don't go to bed with the television on. Some people think they can sleep well with the TV on, but the noise and lights mean you don't really sleep well, so turn it off!<br>
+                    <strong>Tip two:</strong> Don't think too much before bedtime. Do your hardest homework earlier in the evening. Do easier homework later. If your brain is too busy and full of ideas it takes longer to get to sleep.<br>
+                    <strong>Tip three:</strong> Don't play video games for an hour before you go to sleep. They also make your brain too busy and active.<br>
+                    <strong>Tip four:</strong> Turn off your cell phone when you go to bed. What is so important that it can't wait until the morning? If possible, leave your phone in another room.<br>
+                    <strong>Tip five:</strong> Play music if you like. But don't play it too loud. Turn the sound down low.<br>
+                    <strong>Host:</strong> Thank you, Doctor. That is very useful advice for our young listeners.
+                </p>
+            </div>
+        </div>
+
+        <div class="listening-exercise">
+                <h1>Check Your Understanding</h1>
+                <p>Fill the gaps by matching the correct phrase from the box.</p>
+                <div class="exercise-container">
+                    <ul>
+                        <li>
+                            <p><input type="text" /> to the show, Doctor Baker.</p>
+                        </li>
+                        <li>
+                            <p>Thank you, It's <input type="text" />. Let's start with tip one.</p>
+                        </li>
+                        <li>
+                            <p>Do your hardest homework <input type="text" />.</p>
+                        </li>
+                        <li>
+                            <p><input type="text" /> your mobile when you go to bed.</p>
+                        </li>
+                        <li>
+                            <p>Play music if you like. But turn the sound <input type="text" /> to the show, Doctor Baker.</p>
+                        </li>
+                        <li>
+                            <p>That is very <input type="text" /> for our young listeners.</p>
+                        </li>
+                    </ul>
+
+                    <div class="answer-box">
+                        <ul>
+                            <li>down low</li>
+                            <li>great to be here</li>
+                            <li>turn off</li>
+                            <li>useful advice</li>
+                            <li>welcome</li>
+                            <li>earlier in the evening</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="listening-controls">
+                    <button onclick="collectAnswers()">Check answer</button>
+                    <button onclick="resetExercise()">Reset Exercise</button>
+                </div>
+                <p class="listening-score" id="listeningScore"></p>
+        </div>
+
+        <div class="key">
+            <h1>Check Out The Correct Answers</h1>
+            <div class="listening-key" id="listeningKey">
+                <!-- Dari function createAnswerKey di JS -->
+            </div>
+            <button onclick="toggleListeningKey(this)">Check The Correct Answers Here!</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../assets/logo3.png" alt="logo" />
+                <p>Platform pembelajaran bahasa Inggris online interaktif untuk segala usia dan level.</p>
+            </div>
+            <ul>
+                <li><strong>Produk</strong></li>
+                <br>
+                <li><a href="../index.html">Beranda</a></li>
+                <li><a href="../index.html#kelas">Kelas</a></li>
+                <li><a href="../index.html#sumberBelajar">Sumber Belajar</a></li>
+            </ul>
+            <ul>
+                <li><strong>Perusahaan</strong></li>
+                <br>
+                <li><a href="pages/about.html">Tentang Kami</a></li>
+                <li><a href="pages/about.html#contact">Kontak</a></li>
+            </ul>
+            <ul>
+                <li><strong>Jam Kerja</strong></li>
+                <br>
+                <li>Sen-Jum : 10:00-16:00</li>
+                <li>Sab-Min : Libur</li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ 2025 by DEMU DEV. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/classes.js"></script>
+</body>
+</html>

@@ -1,0 +1,598 @@
+@import url('https://fonts.google.com/specimen/Roboto?categoryFilters=Sans+Serif:%2FSans%2F*');
+@import url('https://fonts.google.com/specimen/Fraunces');
+:root {
+  --primaryTextColor: #000000; /* untuk konten */
+  --secondaryTextColor: #99A98F; /* untuk judul */
+ 
+  --primaryBackgroundColor: #99A98F; /* untuk border2 */
+  --secondaryBackgroundColor: #DBEAD2;
+  --thirdBackgroundColor: #FFF8DE;
+ 
+  --primaryIconColor: #99A98F; /* untuk icon */
+  --primaryIconColorHover: #000000;
+ 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+    position: sticky;
+    top: 0;
+    background-color: #ffff;
+    transition: box-shadow 0.3s ease;
+    z-index: 999;
+}
+
+nav.shadow {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: var(--secondaryTextColor);
+    font-size: 3.5rem;
+    margin: 15px 0px;
+    font-family: 'Fraunces', serif;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.7rem;
+}
+
+button {
+    background-color: var(--primaryIconColor);
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    color: #f4f4f4;
+    cursor: pointer;
+}
+
+/* Navbar */
+.logo a img {
+    width: 175px;
+}
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navigation ul li {
+    display: flex;
+    align-items: center;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.navigation ul li :hover {
+    color: blue;
+}
+
+.section-title {
+      color: #7f9983;
+      font-weight: 700;
+      font-size: 3rem;
+      font-family: Fraunces, serif;
+    }
+
+    .section-subtitle {
+      font-weight: 500;
+      margin-bottom: 1.4rem;
+      color: #333;
+      /* max-width: 350px; */
+      margin: auto;
+      margin-bottom: 31px;
+    }
+
+    .highlight-line {
+      border-left: 3px solid #2d5fd2;
+      padding-left: 0.6rem;
+      color: #2d5fd2;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    /* Index */
+    .btn-start {
+      background-color: #90a68f;
+      border: none;
+      color: white;
+      padding: 8px 20px;
+      border-radius: 50px;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+      font-size: 0.9rem;
+    }
+
+    .btn-start:hover {
+      background-color: #72906f;
+      color: white;
+    }
+
+    #kelas .sub-slogan.text-center {
+      color: #333;
+      margin-bottom: 31px;
+
+    }
+
+    .card-custom {
+      background-color: #d8e2d4;
+      border-radius: 15px;
+      padding: 15px;
+      box-shadow: 3px 3px 10px rgb(0 0 0 / 0.05);
+      transition: transform 0.3s ease;
+      min-height: 325px;
+    }
+
+    .card-custom:hover {
+      transform: translateY(-5px);
+      box-shadow: 6px 10px 20px rgb(0 0 0 / 0.1);
+    }
+
+    .text-dark.title {
+      padding: 10px 2px;
+    }
+
+    .card-custom img {
+      border-radius: 12px;
+      object-fit: cover;
+      max-height: 160px;
+      width: 100%;
+    }
+
+    .icon-education {
+      color: #557a59;
+      font-size: 0.85rem;
+      margin-right: 6px;
+    }
+
+    .section-bg-yellow {
+      background-color: #fff6dd;
+      padding-top: 2rem;
+      padding-bottom: 3rem;
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+      border-radius: 15px;
+    }
+
+    .section-bg-greenlight {
+      background-color: #d6e2d4;
+      padding: 3rem 0 3rem 0;
+      margin-top: 4rem;
+    }
+
+/* Hero section */
+#hero {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.hero-left h1 {
+    margin: 20px 0;
+}
+
+.hero-left {
+    padding-right: 40px;
+}
+
+.hero-right {
+    padding-left: 40px;
+}
+
+.hero-right img {
+    width: 600px;
+}
+
+/* Practice material section */
+#practice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.material {
+    margin-top: 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.material p {
+    font-size: 1.2rem;
+}
+
+.material img {
+    width: 875px;
+    height: auto;
+    margin: 15px 0;
+}
+
+/* Practice Quiz section */
+.quiz {
+    margin-top: 6.5rem;
+    width: 1010px;
+    height: auto;
+    background-color: var(--thirdBackgroundColor);
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.quiz h1 {
+    font-size: 2.9rem;
+}
+
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    height: auto;
+    margin: auto;
+    margin-top: 15px;
+    overflow: visible;
+}
+
+.question {
+  background-color: #f4f4f4;
+  text-align: left;
+  padding: 15px;
+  border: 1px solid var(--primaryBackgroundColor);
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  transition: background 0.3s;
+}
+
+.question:hover {
+  background-color: #e0e0e0;
+}
+
+.answers {
+    text-align: left;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    line-height: 2rem;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+}
+
+.answers.open {
+  max-height: 300px; 
+}
+
+.controls {
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+    align-items: flex-start;
+    gap: 10px;
+    padding-left: 185px;
+}
+
+.scoreChecker {
+    text-align: left;
+    padding-left: 185px;
+    margin-top: 10px;
+}
+
+/* Key section */
+.key {
+    margin-top: 40px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.key h1 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+
+.answer-key {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 15px;
+    gap: 5px;
+    overflow: hidden;
+    opacity: 0;
+    max-height: 0;
+    transition: opacity 0.6s ease, max-height 0.6s ease;
+}
+
+.answer-key.visible {
+    opacity: 1;
+    max-height: 1000px; /* just needs to be tall enough for all answers */
+}
+
+.right-answer {
+    background-color: #f4f4f4;
+    text-align: left;
+    padding: 15px;
+    border: 1px solid var(--primaryBackgroundColor);
+    border-radius: 10px;
+    margin-bottom: 5px;
+    transition: background 0.6s;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: var(--primaryBackgroundColor);
+    height: auto;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 80px;
+}
+
+.footer-container ul li {
+    list-style: none;
+    color: #f4f4f4;
+}
+
+.footer-container ul li a {
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+.footer-container ul li a :hover {
+    color: #333;
+    cursor: pointer;
+}
+
+.footer-logo {
+    width: 225px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-logo img {
+    width: 225px;
+}
+
+.footer-logo p {
+    line-height: 1.2rem;
+    color: #f4f4f4;
+}
+
+.copyright {
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    width: 1100px;
+    border-top: solid 1px #f4f4f4;
+    color: #f4f4f4;
+}
+
+.copyright p {
+    font-size: smaller;
+}
+
+
+/* Styling khusus untuk page listening */
+/* Material section */
+.material iframe {
+    width: 854px;
+    height: 480px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.material audio {
+    margin-top: 10px;
+    width: 1000px;
+}
+
+.material-transcript {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    width: 1010px;
+    height: 525px;
+    background-color: var(--thirdBackgroundColor);
+    text-align: center;  
+    padding: 20px 40px;
+    align-items: center;
+}
+
+.material-transcript h1 {
+    font-size: 2.9rem;
+}
+
+.material-transcript .text-box {
+    margin-top: 20px;
+    width: 800px;
+    height: 300px;
+    text-align: left;
+}
+
+/* Listening exercise section */
+.listening-exercise {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    padding: 20px 50px;
+    width: 1010px;
+    height: 450px;
+    background-color: var(--thirdBackgroundColor);
+}
+
+.listening-exercise h1 {
+    font-size: 2.9rem;
+}
+
+.exercise-container {
+    margin-top: 40px;
+    width: 900px;
+    height: 200px;
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.exercise-container ul li {
+    list-style: number;
+}
+
+.exercise-container ul li p {
+    font-size: 0.9rem;
+}
+
+.exercise-container ul li input {
+    background-color: var(--thirdBackgroundColor);
+    border-bottom: solid 1px var(--primaryTextColor);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.answer-box {
+    display: flex;
+    flex-direction: column;
+    padding-top: 12px;
+    align-items: center;
+    width: 200px;
+    height: 150px;
+    background-color: var(--primaryBackgroundColor);
+}
+
+.answer-box ul li {
+    list-style-type: square;
+}
+
+.listening-controls {
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 680px;
+    gap: 10px;
+}
+
+.listening-score {
+    margin-top: 4px;
+    text-align: left;
+    align-self: self-start;
+}
+
+.listening-key {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 15px;
+    gap: 5px;
+    overflow: hidden;
+    opacity: 0;
+    max-height: 0;
+    transition: opacity 0.6s ease, max-height 0.6s ease;
+}
+
+.listening-answer {
+    background-color: #f4f4f4;
+    text-align: left;
+    padding: 15px;
+    border: 1px solid var(--primaryBackgroundColor);
+    border-radius: 10px;
+    margin-bottom: 5px;
+    transition: background 0.6s;
+}
+
+.listening-key.visible {
+    opacity: 1;
+    max-height: 1000px;
+}
+
+/* Dari mas Mukhtar */
+.section-class {
+      position: relative;
+      margin: 2px auto 50px;
+      padding-top: 135px;
+    }
+
+    .section-class:after {
+      content: "";
+      width: 100%;
+      position: absolute;
+      height: 250px;
+      background: #fff8de;
+      top: 264px;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      border-radius: 20px
+    }
+    #sumberBelajar.section-class:after {
+      height: 305px;
+    }
+    #contact.section-class:after {
+      top: 384px
+    }
+    #kelas.section-class:after {
+      top: 370px;
+    }
+    .card-container {
+      justify-content: space-evenly !important;
+      width: 100;
+      height: 200;
+    }
+
+    #sumberBelajar {
+      padding-top: 112px;
+      margin-top: 100px;
+    }
+
+    #kelas .text-center {
+      margin-bottom: 0;
+      color: #333;
+    }
+
+    #kelas .card-custom {
+      cursor: pointer;
+    }
+
+    #contact .text-center {
+      padding-bottom: 10px;
+    }
+    .no-underline:hover {
+      font-style: none;
+      text-decoration: none;
+    }
