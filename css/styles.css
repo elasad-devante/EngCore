@@ -66,6 +66,11 @@ button {
     width: 175px;
 }
 
+.nav-icon {
+    display: flex;
+    gap: 20px;
+}
+
 .navigation ul {
     display: flex;
     list-style: none;
@@ -233,6 +238,38 @@ button {
     width: 875px;
     height: auto;
     margin: 15px 0;
+}
+
+/* Vocabulary section */
+.vocabulary {
+    background-color: var(--thirdBackgroundColor);
+    width: 1010px;
+    height: 625px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px;
+    margin-top: 70px;
+}
+
+.vocabulary table {
+    margin-top: 15px;
+}
+
+.vocabulary tr th {
+    background-color: var(--primaryBackgroundColor);
+    color: #f4f4f4;
+    width: 400px;
+    height: 55px;
+    font-size: x-large;
+}
+
+.vocabulary tr td {
+    background-color: var(--thirdBackgroundColor);
+    border: solid 2px var(--primaryIconColor);
+    width: 400px;
+    height: 40px;
+    color: var(--primaryTextColor);
 }
 
 /* Practice Quiz section */

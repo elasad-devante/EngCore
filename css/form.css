@@ -1,0 +1,78 @@
+@import url('https://fonts.google.com/specimen/Roboto?categoryFilters=Sans+Serif:%2FSans%2F*');
+@import url('https://fonts.google.com/specimen/Fraunces');
+:root {
+  --primaryTextColor: #000000; /* untuk konten */
+  --secondaryTextColor: #99A98F; /* untuk judul */
+ 
+  --primaryBackgroundColor: #99A98F; /* untuk border2 */
+  --secondaryBackgroundColor: #DBEAD2;
+  --thirdBackgroundColor: #FFF8DE;
+ 
+  --primaryIconColor: #99A98F; /* untuk icon */
+  --primaryIconColorHover: #000000;
+ 
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  height: 100vh;
+  position: relative;
+}
+
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.form-title h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: var(--secondaryTextColor);
+}
+
+form {
+    background-color: var(--thirdBackgroundColor);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px 40px;
+    border-radius: 25px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    height: 550px;
+    border: solid 2px var(--primaryIconColor);
+}
+
+form p {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+form p input {
+    border-radius: 20px;
+    height: 40px;
+    border: solid 1px var(--primaryIconColor);
+    padding-left: 20px;
+}
+
+.submit-form {
+    margin-top: 20px;
+}
